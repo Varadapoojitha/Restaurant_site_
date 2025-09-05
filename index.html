@@ -1,0 +1,226 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="hero-section">
+        <div class="header">
+            <div class="logo">Restaurant</div>
+            <div class="header-right">
+                <a href="index.html" class="active">Home</a>
+                <a href="about.html">About</a>
+                <a href="menu.html">Menu</a>
+                <a href="service.html">Service</a>
+                <!-- <a href="contact.html">Contact</a> -->
+                <a href="booktable.html">Book a Table</a>
+            </div>
+        </div>
+
+        <div class="text-block">
+            <div class="text-content">
+                <h1>Enjoy our Delicious Meal</h1>
+                <p>Indulge in an exquisite culinary journey where taste meets tradition. From savory appetizers to
+                    decadent desserts, each plate is a masterpiece.The food we serve here is delicious and healthy.</p>
+            </div>
+            <div class="image-content">
+                <img src="images/menu2.png" alt="Menu Image">
+            </div>
+        </div>
+    </div>
+    <!-- Services Section -->
+    <div class="container">
+        <h1>Services provided</h1>
+        <div class="container-item">
+            <i class="fas fa-user-tie service-icon"></i>
+            <h3>Master Chefs</h3>
+            <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+        </div>
+        <div class="container-item">
+            <i class="fas fa-utensils service-icon"></i>
+            <h3>Quality Food</h3>
+            <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+        </div>
+        <div class="container-item">
+            <i class="fas fa-laptop service-icon"></i>
+            <h3>Online Order</h3>
+            <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+        </div>
+        <div class="container-item">
+            <i class="fas fa-headset service-icon"></i>
+            <h3>24/7 Service</h3>
+            <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+        </div>
+    </div>
+
+    <!-- Menu Section -->
+    <!-- <section class="menu" id="menu">
+        <h1>Items available</h1>
+        <h2><i class="fas fa-utensils service-icon"></i>  Starters</h2>
+        
+        <div class="menu-items">
+            <div class="menu-item">
+                <h4>Grilled Chicken</h4>
+                <p>Served with vegetables and our special sauce</p>
+                <span>199/-</span>
+            </div>
+            <div class="menu-item">
+                <h4>Chilli Cauliflower</h4>
+                <p>cauliflower tossed in chilli sauce with capsicum and onion</p>
+                <span>99/-</span>
+            </div>
+            <div class="menu-item">
+                <h4>Aloo Tikki</h4>
+                <p>Mashed potato snack stuffed with cottage cheese</p>
+                <span>99/-</span>
+            </div>
+            <div class="menu-item">
+                <h4>Paneer65</h4>
+                <p>Redand spice diced cottage cheese tossed in a specialyoghurt mixture </p>
+                <span>149/-</span>
+            </div>
+        </div>
+
+        <h2><i class="fas fa-bread-slice service-icon"></i>  Rotis</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <h4>Tandoori Roti</h4>
+                <p>Mixed wheat flour roti cooked in a tandoor</p>
+                <span>39/-</span>
+            </div>
+            <div class="menu-item">
+                <h4>Butter Roti</h4>
+                <p>Whole wheat roti with melted butter</p>
+                <span>39/-</span>
+            </div>
+            <div class="menu-item">
+                <h4>Phulka</h4>
+                <p> A thin, unleavened bread, often puffed up during cooking.
+                </p>
+                <span>29/-</span>
+            </div>
+            <div class="menu-item">
+                <h4>Butter Phulka</h4>
+                <p>Phulka brushed with butter.</p>
+                <span>49/-</span>
+            </div>
+        </div>
+
+        
+        <h2><i class="fas fa-carrot service-icon"></i>  Veg Curries</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <h4>Paneer Butter Masala</h4>
+                <p>Paneer cubes in a creamy tomato gravy</p>
+                <span>299/-</span>
+            </div>
+            <div class="menu-item">
+                <h4>Veg Korma</h4>
+                <p>Mixed vegetables in spiced coconut gravy</p>
+                <span>199/-</span>
+            </div>
+        </div>
+
+        <h2><i class="fas fa-drumstick-bite service-icon"></i>  Non-Veg Curries</h2>
+        
+        <div class="menu-items">
+            <div class="menu-item">
+                <h4>Chicken Curry</h4>
+                <p>Traditional spicy chicken curry</p>
+                <span>249/-</span>
+            </div>
+            <div class="menu-item">
+                <h4>Butter Chicken</h4>
+                <p>Boneless chicken in creamy tomato sauce</p>
+                <span>299/-</span>
+            </div>
+        </div>
+    </section> -->
+<!-- Booking section-->
+    <div class="container">
+        <div class="container-left">
+            <img src="images/res.jpg" alt="Restaurant">
+        </div>
+
+        <div class="container-right">
+            <h2>Book a Table</h2>
+            <form id="reservationForm">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" required />
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" required />
+
+                <label for="datetime">Date & Time</label>
+                <input type="datetime-local" id="datetime" required />
+
+                <label for="people">No. of People</label>
+                <select id="people" required>
+                    <option value="">Select</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4+">4+</option>
+                </select>
+
+                <label for="request">Special Request</label>
+                <textarea id="request" rows="4" placeholder="Any special requests?"></textarea>
+
+                <button type="submit">Reserve Now</button>
+            </form>
+
+            <div class="confirmation" id="confirmationMessage">
+                ✅ Your reservation has been submitted! We'll get back to you soon.
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        const form = document.getElementById('reservationForm');
+        const confirmation = document.getElementById('confirmationMessage');
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const datetime = document.getElementById('datetime').value;
+            const people = document.getElementById('people').value;
+
+            if (!name || !email || !datetime || !people) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+
+            confirmation.style.display = 'block';
+
+            form.reset();
+        });
+    </script>
+   <!-- Footer section-->
+    <div class="footer">
+        <div class="footer-section">
+            <p><strong>Restaurant Name</strong></p>
+            <p>123 Food Street, Gourmet City</p>
+            <p>Open: Mon–Sun, 10am – 10pm</p>
+        </div>
+        <div class="footer-section">
+            <p>Follow us:</p>
+            <p>Facebook | Instagram | Twitter</p>
+        </div>
+        <div class="footer-section">
+            <p>© 2025 Restaurant. All rights reserved.</p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservation Form</title>
+    <link rel="stylesheet" href="booktable.css">
+
+</head>
+
+<body>
+    <!-- Hero -->
+    <div class="hero-section">
+        <div class="header">
+            <div class="logo">Restaurant</div>
+            <div class="header-right">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="menu.html">Menu</a>
+                <a href="service.html" >Service</a>
+                <!-- <a href="contact.html">Contact</a> -->
+                <a href="booktable.html" class="active">Book a Table</a>
+            </div>
+        </div>
+
+        <div class="text-block center-text">
+            <h1>Book a Table</h1>
+        </div>
+    </div>
+    <div class="container">
+        <!-- Image -->
+        <div class="container-left">
+            <img src="images/res.jpg" alt="Restaurant">
+        </div>
+
+        <!-- Form -->
+        <div class="container-right">
+            <h2>Book a Table</h2>
+            <form id="reservationForm">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" required />
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" required />
+
+                <label for="datetime">Date & Time</label>
+                <input type="datetime-local" id="datetime" required />
+
+                <label for="people">No. of People</label>
+                <select id="people" required>
+                    <option value="">Select</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4+">4+</option>
+                </select>
+
+                <label for="request">Special Request</label>
+                <textarea id="request" rows="4" placeholder="Any special requests?"></textarea>
+
+                <button type="submit">Reserve Now</button>
+            </form>
+
+            <div class="confirmation" id="confirmationMessage">
+                ✅ Your reservation has been submitted! We'll get back to you soon.
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        const form = document.getElementById('reservationForm');
+        const confirmation = document.getElementById('confirmationMessage');
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Simple validation
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const datetime = document.getElementById('datetime').value;
+            const people = document.getElementById('people').value;
+
+            if (!name || !email || !datetime || !people) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+
+            // Show confirmation
+            confirmation.style.display = 'block';
+
+            // Optionally reset form
+            form.reset();
+        });
+    </script>
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-section">
+            <p><strong>Restaurant Name</strong></p>
+            <p>123 Food Street, Gourmet City</p>
+            <p>Open: Mon–Sun, 10am – 10pm</p>
+        </div>
+        <div class="footer-section">
+            <p>Follow us:</p>
+            <p>Facebook | Instagram | Twitter</p>
+        </div>
+        <div class="footer-section">
+            <p>© 2025 Restaurant. All rights reserved.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
